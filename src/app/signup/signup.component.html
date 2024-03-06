@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+</head>
+
+<body>
+    <h2>Formulaire d'inscription</h2>
+    <form action="" method="post">
+        <ul>
+
+            <li class="mb-4"> Civilité&nbsp;:
+                <input [(ngModel)]="user.gender" [ngModelOptions]="{standalone: true}" type="radio" id="name"
+                    name="user_name" />
+                <label for="mr">Monsieur</label>
+                <input [(ngModel)]="user.gender" [ngModelOptions]="{standalone: true}" type="radio" id="name"
+                    name="user_name" />
+                <label for="ms">Madame</label>
+            </li>
+            <li class="mb-4">
+                <label for="lastname">Nom&nbsp;:</label>
+                <input [(ngModel)]="user.lastName" [ngModelOptions]="{standalone: true}" type="text" id="lastname"
+                    name="user_lastname" required />
+            </li>
+            <li class="mb-4">
+                <label for="firstname">Prénom&nbsp;:</label>
+                <input [(ngModel)]="user.firstName" [ngModelOptions]="{standalone: true}" type="text" id="firstname"
+                    name="user_firstname" required />
+            </li>
+
+            <li class="mb-4">
+                <label for="address">Adresse&nbsp;:</label>
+                <input [(ngModel)]="user.address" [ngModelOptions]="{standalone: true}" type="text" id="address"
+                    name="user_address" />
+            </li>
+            <li class="mb-4">
+                <label for="zipcode">Code postal&nbsp;:</label>
+                <input [(ngModel)]="user.zipcode" [ngModelOptions]="{standalone: true}" type="text" id="zipcode"
+                    name="user_zipcode" />
+            </li>
+            <li class="mb-4">
+                <label for="city">Ville&nbsp;:</label>
+                <input [(ngModel)]="user.city" [ngModelOptions]="{standalone: true}" type="text" id="city"
+                    name="user_city" />
+            </li>
+
+
+            <li class="mb-4">
+                <label for="phone">Téléphone&nbsp;:</label>
+                <input [(ngModel)]="user.phone" [ngModelOptions]="{standalone: true}" type="tel" id="tel"
+                    name="user_tel" />
+            </li>
+            <li class="mb-4">
+                <label for="mail">E-mail&nbsp;:</label>
+                <input [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" type="email" id="mail"
+                    name="user_mail" />
+            </li>
+
+            <li class="mb-4">
+                <label for="login">Login&nbsp;:</label>
+                <input [(ngModel)]="user.login" [ngModelOptions]="{standalone: true}" type="text" id="login"
+                    name="user_login" required />
+            </li>
+            <li class="mb-4">
+                <label for="password">Password&nbsp;:</label>
+                <input [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" type="password" id="password"
+                    name="user_password" required />
+            </li>
+            <li class="mb-4">
+                <input class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 cursor-pointer"
+                    type="submit" (click)="onSignUp()" value="S'inscrire">
+                    <div *ngIf="errorMessage" class="text-red-500 text-xs">{{ errorMessage }}</div>
+            </li>
+
+        </ul>
+    </form>
+</body>
+
+</html>
