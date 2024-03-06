@@ -23,11 +23,9 @@ export class RecapComponent implements OnInit {
 
   confirmRegistration() {
     // Logique pour confirmer l'enregistrement
-    console.log('ConfirmRegistration button clicked');
   }
 
   goBackToSignup() {
     this.router.navigate(['signup']);
-    console.log('BackToSignup button clicked');
   }
 }

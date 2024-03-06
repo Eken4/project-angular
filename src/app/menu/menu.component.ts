@@ -11,6 +11,10 @@ import { Router } from '@angular/router';
 export class MenuComponent {
   constructor(private router: Router) { }
 
+  redirectToHome() {
+    this.router.navigate(['home']);
+  }
+
   redirectToAbout() {
     this.router.navigate(['about']);
   }

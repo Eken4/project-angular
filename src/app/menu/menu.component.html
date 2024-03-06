@@ -1,9 +1,29 @@
-<div class="overlay-menu fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+<div class="overlay-menu flex left-0 top-0 h-full w-64 bg-gray-900 text-white">
     <!-- Contenu de votre menu -->
     <ul>
-        <li><a routerLink="/home">Accueil</a></li>
-        <li><a routerLink="/catalog">Catalogue produits</a></li>
-        <li><a routerLink="/about">À propos</a></li>
+        <li>
+            <div (click)="redirectToHome()">
+                <a routerLink="/home" class="flex items-center">
+                    Accueil
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div (click)="redirectToCatalog()">
+                <a routerLink="/home" class="flex items-center">
+                    Catalogue
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div (click)="redirectToAbout()">
+                <a routerLink="/home" class="flex items-center">
+                    A propos
+                </a>
+            </div>
+        </li>
         <!-- Autres éléments du menu -->
     </ul>
 </div>

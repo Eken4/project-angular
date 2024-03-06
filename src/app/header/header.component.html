@@ -7,18 +7,9 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="overlay-menu" *ngIf="isMenuOpen">
-                <app-menu/>
+                <app-menu />
             </div>
         </div>
-
-        <div (click)="redirectToCatalog()">
-            <a routerLink="/home" class="flex items-center">
-                <h1 class="text-4xl font-bold text-center">
-                    Catalogue
-                </h1>
-            </a>
-        </div>
-
 
         <div (click)="redirectToHome()">
             <a routerLink="/home" class="flex items-center">
