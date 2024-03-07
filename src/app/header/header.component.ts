@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuComponent } from "../menu/menu.component";
 import { CommonModule } from '@angular/common';
+import { SearchComponent } from '../search/search.component';
 
 @Component({
     selector: 'app-header',
     standalone: true,
-    imports: [MenuComponent, CommonModule],
+    imports: [MenuComponent, CommonModule, SearchComponent],
     templateUrl: './header.component.html',
     styleUrl: './header.component.css'
 })
@@ -32,5 +33,4 @@ export class HeaderComponent {
   redirectToCatalog() {
     this.router.navigate(['catalog']);
   }
-
 }
