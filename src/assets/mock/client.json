@@ -1,92 +1,50 @@
 [
   {
-    "name": "Produit 1",
-    "description": "Description du produit 1",
-    "price": "10€",
+    "name": "Aventure en montagne",
+    "description": "Partez à la découverte des sommets majestueux lors de cette aventure en montagne. Profitez de paysages à couper le souffle, de randonnées stimulantes et de moments inoubliables au cœur de la nature.",
+    "price": "499€",
+    "duration": "7 jours",
+    "destination": "Alpes françaises",
     "imageUrl": "https://via.placeholder.com/300"
   },
   {
-    "name": "Produit 2",
-    "description": "Description du produit 2",
-    "price": "15€",
+    "name": "Safari en Afrique",
+    "description": "Plongez au cœur de la savane africaine lors de ce safari inoubliable. Observez de près les majestueux animaux sauvages dans leur habitat naturel, vivez des aventures palpitantes et créez des souvenirs mémorables.",
+    "price": "1499€",
+    "duration": "10 jours",
+    "destination": "Tanzanie",
     "imageUrl": "https://via.placeholder.com/300"
   },
   {
-    "name": "Produit 3",
-    "description": "Description du produit 3",
-    "price": "20€",
+    "name": "Croisière en Méditerranée",
+    "description": "Explorez les joyaux de la Méditerranée lors de cette croisière de luxe. Détendez-vous sur les plages de sable fin, découvrez des villes historiques fascinantes et savourez une cuisine délicieuse tout en naviguant sur des eaux cristallines.",
+    "price": "999€",
+    "duration": "8 jours",
+    "destination": "Méditerranée",
     "imageUrl": "https://via.placeholder.com/300"
   },
   {
-    "name": "Produit 4",
-    "description": "Description du produit 4",
-    "price": "25€",
+    "name": "Escapade urbaine à New York",
+    "description": "Découvrez l'effervescence de la ville qui ne dort jamais lors de cette escapade urbaine à New York. Explorez des quartiers emblématiques, assistez à des spectacles de Broadway et découvrez les attractions légendaires de la ville.",
+    "price": "799€",
+    "duration": "5 jours",
+    "destination": "New York, États-Unis",
     "imageUrl": "https://via.placeholder.com/300"
   },
   {
-    "name": "Produit 5",
-    "description": "Description du produit 5",
-    "price": "30€",
+    "name": "Voyage culturel au Japon",
+    "description": "Immergez-vous dans la riche culture et la tradition du Japon lors de ce voyage culturel fascinant. Explorez des temples anciens, dégustez une cuisine exquise, assistez à des cérémonies traditionnelles et découvrez la modernité de Tokyo.",
+    "price": "1599€",
+    "duration": "12 jours",
+    "destination": "Japon",
     "imageUrl": "https://via.placeholder.com/300"
   },
   {
-    "name": "Produit 6",
-    "description": "Description du produit 6",
-    "price": "35€",
-    "imageUrl": "https://via.placeholder.com/300"
-  },
-  {
-    "name": "Produit 7",
-    "description": "Description du produit 7",
-    "price": "40€",
-    "imageUrl": "https://via.placeholder.com/300"
-  },
-  {
-    "name": "Produit 8",
-    "description": "Description du produit 8",
-    "price": "45€",
-    "imageUrl": "https://via.placeholder.com/300"
-  },
-  {
-    "name": "Produit 9",
-    "description": "Description du produit 9",
-    "price": "50€",
-    "imageUrl": "https://via.placeholder.com/300"
-  },
-  {
-    "name": "Produit 10",
-    "description": "Description du produit 10",
-    "price": "55€",
-    "imageUrl": "https://via.placeholder.com/300"
-  },
-  {
-    "name": "Produit 11",
-    "description": "Description du produit 11",
-    "price": "60€",
-    "imageUrl": "https://via.placeholder.com/300"
-  },
-  {
-    "name": "Produit 12",
-    "description": "Description du produit 12",
-    "price": "65€",
-    "imageUrl": "https://via.placeholder.com/300"
-  },
-  {
-    "name": "Produit 13",
-    "description": "Description du produit 13",
-    "price": "70€",
-    "imageUrl": "https://via.placeholder.com/300"
-  },
-  {
-    "name": "Produit 14",
-    "description": "Description du produit 14",
-    "price": "75€",
-    "imageUrl": "https://via.placeholder.com/300"
-  },
-  {
-    "name": "Produit 15",
-    "description": "Description du produit 15",
-    "price": "80€",
+    "name": "Croisière sur le Nil",
+    "description": "Découvrez les merveilles de l'Égypte ancienne lors de cette croisière inoubliable sur le Nil. Explorez les temples historiques, les pyramides majestueuses et les trésors cachés des pharaons tout en naviguant sur le légendaire fleuve.",
+    "price": "1299€",
+    "duration": "9 jours",
+    "destination": "Égypte",
     "imageUrl": "https://via.placeholder.com/300"
   }
 ]
