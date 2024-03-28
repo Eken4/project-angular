@@ -15,7 +15,7 @@ import { ProductComponent } from '../product/product.component';
   styleUrl: './catalog.component.css'
 })
 export class CatalogComponent implements OnInit {
-  products!: Product[]; // Utilisez Product[] plutôt qu'Observable<Product[]>
+  public declare products: Product[]; 
 
   public search: string = '';
 
