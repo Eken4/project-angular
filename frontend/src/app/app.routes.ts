@@ -9,6 +9,8 @@ import { AboutComponent } from './about/about.component';
 import { CardListComponent } from './card-manager/card-list/card-list.component';
 import { CardFormComponent } from './card-manager/card-form/card-form.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PaymentCompleteComponent } from './payment-complete/payment-complete.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -16,6 +18,8 @@ export const routes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'catalog', component: CatalogComponent },
     { path: 'shopping-cart', component: ShoppingCartComponent },
+    {path: 'payment', component: PaymentComponent},
+    {path: 'payment-complete', component: PaymentCompleteComponent},
     { path: 'card-form', component: CardFormComponent },
     { path: 'cards', component: CardListComponent },
     // { path: 'login', component: LoginComponent },

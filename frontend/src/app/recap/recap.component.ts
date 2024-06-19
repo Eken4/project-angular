@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/registrationData.service';
+import { RegistrationDataService } from '../services/registrationData.service';
 import { Router } from '@angular/router';
 import { User } from '../models/user';
 
@@ -12,7 +12,7 @@ import { User } from '../models/user';
 export class RecapComponent implements OnInit {
   person: User | null = null;
 
-  constructor(private dataService: DataService, private router: Router) { }
+  constructor(private dataService: RegistrationDataService, private router: Router) { }
 
   ngOnInit() {
     // Souscrire au service pour recevoir les mises à jour des données

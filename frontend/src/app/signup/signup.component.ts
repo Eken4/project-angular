@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { DataService } from '../services/registrationData.service';
+import { RegistrationDataService } from '../services/registrationData.service';
 import { Router } from '@angular/router';
 import { User } from '../models/user';
 
@@ -18,7 +18,7 @@ export class SignupComponent {
   formError: boolean = false;
   errorMessage: string = '';
 
-  constructor(private dataService: DataService, private router: Router) { }
+  constructor(private registrationDataService: RegistrationDataService, private router: Router) { }
 
   onSignUp(): void {
     if (this.isFormValid() == true) {
@@ -38,7 +38,7 @@ export class SignupComponent {
 
   // Function to go to the registration recap page and send the data to the service
   ToRegistrationRecap() {
-    this.dataService.updateFormData(this.user);
+    this.registrationDataService.updateFormData(this.user);
     this.router.navigate(['recap']);
   }
 

@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { CardListComponent } from '../card-manager/card-list/card-list.component';
+import { PaymentComponent } from '../payment/payment.component';
 
 @Component({
     selector: 'app-home',
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.css',
-    imports: [CardListComponent]
+    imports: [PaymentComponent]
 })
+
 export class HomeComponent {
 
 }

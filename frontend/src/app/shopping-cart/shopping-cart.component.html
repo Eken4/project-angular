@@ -1,1 +1,15 @@
-<p>shopping-cart works!</p>
+<div class="p-4 max-w-md mx-auto bg-white shadow-md rounded-lg">
+    <h2>Panier</h2>
+    <ul>
+      <li *ngFor="let product of products">
+        {{ product.name }} - {{ product.price }}
+      </li>
+    </ul>
+    <div>
+      <strong>Total: {{ totalAmount }} €</strong>
+    </div>
+    <button (click)="ToPaymentForm()"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Continuer vers le paiement
+      </button>
+  </div>
