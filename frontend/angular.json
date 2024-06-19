@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tp03_debressy_juliette": {
+    "project_debressy_juliette": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/tp03_debressy_juliette",
+            "outputPath": "dist/project_debressy_juliette",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -61,10 +61,10 @@
           },
           "configurations": {
             "production": {
-              "buildTarget": "tp03_debressy_juliette:build:production"
+              "buildTarget": "project_debressy_juliette:build:production"
             },
             "development": {
-              "buildTarget": "tp03_debressy_juliette:build:development"
+              "buildTarget": "project_debressy_juliette:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "tp03_debressy_juliette:build"
+            "buildTarget": "project_debressy_juliette:build"
           }
         },
         "test": {

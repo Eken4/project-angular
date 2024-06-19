@@ -14,5 +14,5 @@ import { SignupComponent } from './signup/signup.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'tp03_debressy_juliette';
+  title = 'project_debressy_juliette';
 }
