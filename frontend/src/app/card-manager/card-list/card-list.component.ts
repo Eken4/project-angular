@@ -8,10 +8,10 @@ import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 
 @Component({
-  providers: [ApiService],
   selector: 'app-card-list',
   standalone: true,
   imports: [CommonModule, HttpClientModule, CardComponent],
+  providers: [ApiService],
   templateUrl: './card-list.component.html',
   styleUrl: './card-list.component.css'
 })
