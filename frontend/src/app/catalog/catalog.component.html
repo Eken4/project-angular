@@ -3,7 +3,6 @@
   <app-search (searchEvent)="onSearch($event)"></app-search>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
     <app-product *ngFor="let product of products" [data]="product">
-      <!-- <i class="fas fa-plus icon plus" (click)="addToCart()"></i> -->
     </app-product>
     
   </div>
