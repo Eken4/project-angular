@@ -21,11 +21,19 @@
 
         <!-- <app-search></app-search> -->
 
-        <div class="signup-button" (click)="redirectToSignup()">
-            <a routerLink="/signup" class="flex items-center">
-                Signup
-            </a>
+        <div class="flex justify-between">
+            <div (click)="redirectToCart()">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+            </div>
+    
+            <div class="signup-button" (click)="redirectToSignup()">
+                <a routerLink="/signup" class="flex items-center">
+                    Signup
+                </a>
+            </div>
+
         </div>
+        
     </div>
 
 </div>

@@ -12,4 +12,5 @@ import { Card } from '../../models/card';
 
 export class CardComponent {
   public declare data: Card
+  
 }

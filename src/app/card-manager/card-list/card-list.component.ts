@@ -4,6 +4,8 @@ import { CardComponent } from '../card/card.component';
 import { ApiService } from '../../services/api.service';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   providers: [ApiService],
@@ -13,19 +15,22 @@ import { HttpClientModule } from '@angular/common/http';
   templateUrl: './card-list.component.html',
   styleUrl: './card-list.component.css'
 })
-export class CardListComponent implements OnInit{
-  public declare cards: Card[];
+export class CardListComponent implements OnInit {
+  public declare cards: Observable<Card[]>;
+
+  redirectToCardForm() {
+    this.router.navigate(['card-form']);
+  }
 
   ngOnInit() {
-    this.getCards();
+    this.cards = this.getCards();
   }
 
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService, private router: Router) {
+
+  }
 
   getCards() {
-    this.apiService.getCards().subscribe((result: Card[]) => {
-      this.cards = result;
-    });
-  }
+    return this.apiService.getCards();}
 
 }

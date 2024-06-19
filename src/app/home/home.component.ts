@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CardListComponent } from "../card-list/card-list.component";
+import { CardListComponent } from '../card-manager/card-list/card-list.component';
 
 @Component({
     selector: 'app-home',

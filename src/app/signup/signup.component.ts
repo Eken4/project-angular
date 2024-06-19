@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DataService } from '../services/registrationData.service';
 import { Router } from '@angular/router';
+import { User } from '../models/user';
 
 @Component({
   selector: 'app-signup',
@@ -52,46 +53,13 @@ export class SignupComponent {
       this.formError = true;
       this.errorMessage = 'Last name is required';
     }
-    else if (this.user.phone === '') {
-      this.formError = true;
-      this.errorMessage = 'Phone number is required';
-    }
     else if (this.user.email === '') {
       this.formError = true;
       this.errorMessage = 'Email is required';
-    }
-    else if (this.user.zipcode === '') {
-      this.formError = true;
-      this.errorMessage = 'Postal code is required';
-    }
-    else if (this.user.city === '') {
-      this.formError = true;
-      this.errorMessage = 'City is required';
-    }
-    else if (this.user.gender === '') {
-      this.formError = true;
-      this.errorMessage = 'Gender is required';
-    }
-    else if (this.user.login === '') {
-      this.formError = true;
-      this.errorMessage = 'Login is required';
     }
     else if (this.user.password === '') {
       this.formError = true;
       this.errorMessage = 'Password is required';
     }
   }
-}
-
-export class User {
-  gender: string = '';
-  lastName: string = '';
-  firstName: string = '';
-  phone: string = '';
-  email: string = '';
-  address: string = '';
-  zipcode: string = '';
-  city: string = '';
-  login: string = '';
-  password: string = '';
 }

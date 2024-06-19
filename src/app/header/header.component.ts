@@ -32,4 +32,8 @@ export class HeaderComponent {
   redirectToCatalog() {
     this.router.navigate(['catalog']);
   }
+
+  redirectToCart() {
+    this.router.navigate(['shopping-cart']);
+  }
 }

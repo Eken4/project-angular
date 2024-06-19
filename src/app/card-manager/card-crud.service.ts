@@ -13,21 +13,17 @@ export class CardCrudService implements OnInit {
     this.apiService.getCards().subscribe((result: Card[]) => {
       this.cards = result;
     });
-
   }
 
   constructor(private apiService: ApiService) { }
 
 
-
   createCards(card:Card) {
     this.cards.push(card);
-
   }
 
   readCards() {
     return this.cards;
-
   }
 
   updateCards() {
